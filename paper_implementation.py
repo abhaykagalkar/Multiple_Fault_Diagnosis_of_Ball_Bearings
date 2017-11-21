@@ -62,9 +62,9 @@ for i in range (1000):
     a.append(math.sqrt(imf1[i]+ht[i]));
 
 ft=np.fft.fft(a);
-#plt.subplot(2,1,1);
+plt.subplot(2,1,1);
 print('Fourier');
-#plt.plot(ft);
-#plt.xlabel('Frequency');
-#plt.ylabel('Amplitude');
-#plt.show();
+plt.plot(abs(ft));
+plt.xlabel('Frequency');
+plt.ylabel('Amplitude');
+plt.show();
